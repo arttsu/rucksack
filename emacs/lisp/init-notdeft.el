@@ -1,0 +1,5 @@
+(when (file-directory-p "~/notdeft")
+  (add-to-list 'load-path "~/notdeft")
+  (require 'notdeft-autoloads)
+  (customize-set-variable 'notdeft-directories '("~/zettelkasten"))
+  (global-set-key (kbd "C-c n d") 'notdeft))
